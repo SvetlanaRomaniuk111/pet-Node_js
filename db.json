@@ -39,6 +39,76 @@
       "isVaccinated": false,
       "gender": "male",
       "species": "cat"
+    },
+    {
+      "id": "TA26vfMJZ0KqrnwmFHjYx",
+      "createdAt": "2023-11-21T18:15:43.752Z",
+      "updatedAt": "2023-11-21T18:15:43.753Z",
+      "name": "Uzbek",
+      "age": 4,
+      "isVaccinated": false,
+      "gender": "male",
+      "species": "cat"
+    },
+    {
+      "id": "e6KDx1WMF2gJBp-rPEBpb",
+      "createdAt": "2023-11-21T18:27:37.250Z",
+      "updatedAt": "2023-11-21T18:27:37.251Z",
+      "name": "Rex",
+      "age": 2,
+      "isVaccinated": "true",
+      "gender": "female",
+      "species": "cat"
+    },
+    {
+      "id": "_YS_zsYS3m7OeAeg5EU6-",
+      "createdAt": "2023-11-21T18:28:26.740Z",
+      "updatedAt": "2023-11-21T18:28:26.741Z",
+      "name": "Uzbek",
+      "age": 4,
+      "isVaccinated": false,
+      "gender": "male",
+      "species": "cat"
+    },
+    {
+      "id": "2fY1aa7ZnmrRvvlRhDXeE",
+      "createdAt": "2023-11-25T19:03:44.888Z",
+      "updatedAt": "2023-11-25T19:03:44.889Z",
+      "name": "Vicsy",
+      "age": 7,
+      "isVaccinated": true,
+      "gender": "female",
+      "species": "dog"
+    },
+    {
+      "id": "302hanJVKv0sz_pie5GzF",
+      "createdAt": "2023-11-25T19:15:31.031Z",
+      "updatedAt": "2023-11-25T19:15:31.031Z",
+      "name": "Bingo",
+      "age": 4,
+      "isVaccinated": false,
+      "gender": "male",
+      "species": "dog"
+    },
+    {
+      "id": "claX8NGKDcv_GfM_F5K1m",
+      "createdAt": "2023-11-26T05:13:32.711Z",
+      "updatedAt": "2023-11-26T05:13:32.712Z",
+      "name": "Masya",
+      "age": 5,
+      "isVaccinated": true,
+      "gender": "male",
+      "species": "pet"
+    },
+    {
+      "id": "KQv6CEh6pHmW0HXJMYFsz",
+      "createdAt": "2023-11-26T10:09:54.907Z",
+      "updatedAt": "2023-11-26T10:15:25.270Z",
+      "name": "Masy",
+      "age": 3,
+      "isVaccinated": true,
+      "gender": "female",
+      "species": "mouse"
     }
   ]
 }

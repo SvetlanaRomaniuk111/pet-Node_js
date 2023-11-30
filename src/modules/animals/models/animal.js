@@ -13,4 +13,13 @@ class Animal {
   }
 }
 
+// const animalSchema = new Schema({
+//   name: String,
+//   age: Number,
+//   isVaccinated: { type: Boolean, default: false },
+//   gender: { type: String, enum: ['male', 'female'] },
+//   species: String,
+// })
+// return Animal;
+
 module.exports = Animal;
