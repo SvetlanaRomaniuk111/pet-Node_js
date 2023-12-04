@@ -4,17 +4,8 @@ class AnimalController {
   constructor(animalsService) {
     this.animalsService = animalsService;
   }
-
-  getAnimals = async (req, res) => {
-    const animals = await this.animalsService.getAll();
-    res.json({
-      status: 200,
-      message: 'Successfully retrieved all animals!',
-      data: animals,
-    });
-  }
-  
-  getAnimalById = async (req, res, next) => {
+    
+  getAnimalById = async (req, res) => {
     const { animalId } = req.params;
     const animal = await this.animalsService.getOneById(animalId);
     res.json({
@@ -23,7 +14,43 @@ class AnimalController {
       data: animal,
     });
   }; 
-  
+
+  getAnimals = async (req, res) => {
+    const {
+      limit = 5,
+      page = 1,
+      isVaccinated,
+      sortBy,
+      order = 'asc',
+      minAge,
+    } = req.query;
+    const config = {
+      limit: parseInt(limit),
+      page: parseInt(page),
+    }
+
+    if (isVaccinated) {
+      config.isVaccinated = Boolean(parseInt(isVaccinated));
+    }
+
+    if (sortBy) {
+       config.sortBy = sortBy;
+       config.order = order;
+    }
+
+    if (minAge) {
+       config.minAge = parseInt(minAge);
+    }
+
+    const { animals, count } = await this.animalsService.getAll(config);
+
+    res.json({
+      status: 200,
+      message: 'Successfully retrieved all animals!',
+      data: { animals, count, page: parseInt(page), limit: parseInt(limit) },
+    });
+  }
+ 
   createAnimal = async (req, res) => {
     console.log(req.body)
     const animal = await this.animalsService.create(req.body)

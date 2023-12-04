@@ -13,12 +13,8 @@ router.get('/:animalId', errorWrapper(animalController.getAnimalById));
 
 router.post('/', validate(createAnimalSchema), errorWrapper(animalController.createAnimal));
 
-router.put(
-  '/:animalId',
-  validate(updateAnimalSchema),
-  errorWrapper(animalController.updateAnimal),
-);
+router.put('/:animalId',  validate(updateAnimalSchema),  errorWrapper(animalController.updateAnimal),);
 
-router.put('/:animalId', errorWrapper(animalController.updateAnimal));
+router.delete('/:animalId', errorWrapper(animalController.deleteAnimal));
 
 module.exports = router;
